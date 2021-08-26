@@ -121,3 +121,67 @@ color: white;
     
 
 }
+
+
+// Header Notification
+.header__notify{
+    position: absolute;
+    top: 118%;
+    border-radius: 2px;
+    right: 0;
+    width: 404px;
+    background-color: var(--white-color);
+    border: 1px solid #d3d3d3;
+}
+.header__notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+
+}
+.header__notify-header h3{
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+.header__notify-list {
+    padding-left: 0;
+
+}
+
+.header__notify-item {
+    display: flex;
+}
+
+.header__notify-link {
+    display: flex;
+    padding: 12px ;
+    text-decoration: none;
+
+}
+
+.header__notify-img {
+    width: 48px;
+    object-fit: contain;
+
+}
+
+.header__notify-info {
+    margin-left: 12px;
+
+}
+
+.header__notify-name {
+    display: block;
+    font-size: 14px;
+    color: black;
+}
+
+.header__notify-description {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #756f6e;
+}
