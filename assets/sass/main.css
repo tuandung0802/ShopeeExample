@@ -1,12 +1,4 @@
-:root{
-    --primary-color:#EE4D2D;
-    --primary-color-rgba:rgb(238, 77, 45);
 
-    --black-color:#000;
-    --white-color:#fff;
-    --text-color:#333;
-    --border-color:#dbdbdb;
-}
 
 *{
     box-sizing: inherit;
@@ -50,19 +42,35 @@ html{
 
     color: var(--text-color);
     min-width: 142px;
-    height: 36px;
+    height: 34px;
     border: none;
     text-decoration: none;
     border-radius: 2px; 
     font-size: 1.5rem;
-    padding: 0;
+    padding: 0 8px;
     outline: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .btn.btn--primary{
     background-color: var(--primary-color);
+    color: var(--white-color);
 }
 .btn.btn--disabled{
     cursor: default;
     filter: brightness(80%);
+}
+
+.auth-form__controls-back{
+    margin-right: 8px;
+}
+
+.auth-form__socials{
+    background-color: #f5f5f5;
 }
