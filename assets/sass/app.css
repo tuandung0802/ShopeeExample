@@ -291,14 +291,44 @@
 
 .auth-form__switch-btn {
   font-size: 1.6rem;
-  color: var(--primary-color);
   font-weight: 500;
+  color: var(--primary-color);
   cursor: pointer;
 }
 
-.auth-form__form {
-  margin-top: 16px;
+.auth-form__groupinput {
   width: 100%;
+  height: 40px;
+  margin-top: 16px;
+  font-size: 1.4rem;
+  padding-left: 12px;
+  border-radius: 2px;
+  border: 1px solid var(--border-color);
+  outline: none;
+}
+
+.auth-form__groupinput:focus {
+  border-color: #888888;
+}
+
+.auth-form__adside {
+  margin-top: 18px;
+}
+
+.auth-form_policy-text {
+  font-size: 12px;
+  line-height: 1.6rem;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.auth-form__policy-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.auth-form__controls {
+  margin-top: 80px;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -5,6 +5,7 @@
     --black-color:#000;
     --white-color:#fff;
     --text-color:#333;
+    --border-color:#dbdbdb;
 }
 
 *{
@@ -42,4 +43,26 @@ html{
     to{
         opacity: 1;
     }
+}
+
+/* buton style */
+.btn{
+
+    color: var(--text-color);
+    min-width: 142px;
+    height: 36px;
+    border: none;
+    text-decoration: none;
+    border-radius: 2px; 
+    font-size: 1.5rem;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+.btn.btn--primary{
+    background-color: var(--primary-color);
+}
+.btn.btn--disabled{
+    cursor: default;
+    filter: brightness(80%);
 }
