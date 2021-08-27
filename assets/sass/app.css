@@ -151,8 +151,17 @@
   display: flex;
 }
 
+.header__notify-item:hover {
+  background-color: #f7f7f7;
+}
+
+.header__notify-item--seen {
+  background-color: rgba(238, 77, 45, 0.09);
+}
+
 .header__notify-link {
   display: flex;
+  width: 100%;
   padding: 12px;
   text-decoration: none;
 }
@@ -168,15 +177,28 @@
 
 .header__notify-name {
   display: block;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: black;
+  font-weight: 400;
 }
 
 .header__notify-description {
   display: block;
-  font-size: 12px;
+  font-size: 1.2rem;
   margin-top: 10px;
+  line-height: 1.6rem;
   color: #756f6e;
+}
+
+.header__notify-footer {
+  text-align: center;
+}
+
+.header__notify-footer-btn {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 12px 12px;
+  display: block;
 }
 
 /*# sourceMappingURL=app.css.map */
