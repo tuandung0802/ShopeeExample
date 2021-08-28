@@ -5,6 +5,7 @@
     left: 0;
     bottom:0;
     display: flex;
+    animation: fadeIn linear 0.1s;
     
 
 }
@@ -17,11 +18,14 @@
 }
 
 .modal__body{
+    --growth-from:0.7;
+    --growth-to:1;
     z-index: 1;
     
     width: 500px;
     
     margin: auto;
+    animation: growth linear 0.1s;
 }
 
 
@@ -39,6 +43,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 10px;
 }
 
 
@@ -138,4 +144,24 @@ align-items: center;
 
 .connectsocial{
     margin: 0 36px;
+}
+.auth-form__help{
+    display: flex;
+    justify-content: flex-end;
+    
+
+}
+.auth-form__help-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #939393;
+}
+.auth-form__help-sparate{
+    display: block;
+    height: 20px;
+    border-left: 1px solid var(--border-color);
+    margin:0 16px ;
+}
+.auth-form__help-forgot{
+    color: var(--primary-color);
 }
