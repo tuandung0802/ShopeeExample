@@ -253,11 +253,6 @@
   text-align: center;
 }
 
-.auth-form__controls {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .modal {
   position: fixed;
   top: 0;
