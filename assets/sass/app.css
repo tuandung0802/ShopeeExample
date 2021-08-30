@@ -532,6 +532,40 @@
   display: inline-block;
 }
 
+.header__cart-heading {
+  text-align: left;
+  margin: 8px 0 8px 12px;
+  font-style: 1.4em;
+  color: #999;
+  font-weight: 400;
+}
+
+.header__cart-list-item {
+  padding: 0;
+  list-style: none;
+}
+
+.header__cart-item {
+  display: flex;
+}
+
+.header__cart-img {
+  width: 42px;
+  height: 42px;
+  margin: 12px;
+}
+
+.header__cart-item-head {
+  display: flex;
+  align-items: center;
+}
+
+.header__cart-item-name {
+  font-style: 1.4rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
 .modal {
   position: fixed;
   top: 0;
