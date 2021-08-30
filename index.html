@@ -145,6 +145,7 @@
                     <div class="header__search">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm">
+                            <!-- Search history -->
                             <div class="header__search-history">
                                 <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
                                 <ul class="header__search-history-list">
@@ -180,12 +181,27 @@
                             <i class="header__search-btn-icon fas fa-search"></i>
                         </button>
                     </div>
+
+                    <!-- Cart layout -->
                     <div class="header__cart">
+                        
+                       <div class="header__cart-wrap">
                         <i class="header__cart-icon fas fa-shopping-cart"></i>
+
+                        <span class="header__cart-notice">3</span>
+                        <!-- no cart cart:header__cart-list--no-cart -->
+                        <div class="header__cart-list ">
+                                <img src="./assets/image/no_cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                        Chưa có sản phẩm
+                                </span>
+                       </div>
                     </div>
                 </div>
             </div>
+            </div>
         </div>
+        
 
 
         <div class="container">

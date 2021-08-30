@@ -136,6 +136,7 @@ color: white;
     animation: headerNotifyGrowth ease-in 0.25s;
     will-change: opacity,transform;
     display: none;
+    z-index: 1;
 }
 .header__notify::before{
     content: "";
@@ -280,6 +281,17 @@ margin: 0 4px;
 .header__cart{
     width: 150px;
     text-align: center;
+    
+    
+}
+.header__cart-wrap{
+    position: relative;
+    display: inline-block;
+    padding: 0 8px;
+    cursor: pointer;
+}
+.header__cart-wrap:hover .header__cart-list{
+    display: block;
 }
 
 .header__cart-icon{
@@ -288,6 +300,78 @@ margin: 0 4px;
     color: var(--white-color);
 
 }
+
+
+.header__cart-list{
+    position: absolute;
+    top: calc( 100% + 9px );
+    right: -3px;
+    background-color: var(--white-color);
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3.125rem 0 rgba(0,0,0,0.2);
+    height: 250px;
+    display: none;
+    animation: headerNotifyGrowth ease-in 0.25s;
+    transform-origin: calc(100% - 20px) top ;
+    cursor: default;
+
+}
+.header__cart-list::after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    right:-1px;
+    top:-30px;
+    border-width:20px 26px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+
+}
+.header__cart-list--no-cart{
+    padding: 60px 0 0;
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.header__cart-list--no-cart .header__cart-no-cart-img,
+.header__cart-list--no-cart .header__cart-list-no-cart-msg{
+    
+    display: block;
+}
+
+.header__cart-no-cart-img{
+    width:30%;
+    margin-top: 60px;
+    align-self: center;
+    display: none;
+
+}
+.header__cart-list-no-cart-msg{
+    display: none;
+    font-size: 1.4rem;
+    margin-top: 12px;
+    color : var(--text-color);
+    
+}
+.header__cart-notice{
+    position: absolute;
+    padding: 1px 7px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    border-radius:10px ;
+    border:2px solid #EE4d2d ;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    top:-8px  ;
+    right:-7px;
+    
+
+}
+
+
 
 .header__search-input{
     width: 100%;
@@ -346,6 +430,7 @@ margin: 0 4px;
     font-size: 1.4rem;
     line-height: 38px;
     color: var(--text-color);
+    display: block;
 }
 
 
