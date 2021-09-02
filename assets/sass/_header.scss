@@ -35,7 +35,7 @@
     border: 1px solid rgba(0,0,0,0.2);
 }
 .header__navbar-user-name{
-    margin-left: 8px;
+    margin-left: 4px;
     font-weight: 400;
     font-size: 1.4rem;
 }
@@ -93,10 +93,13 @@
     z-index: 1;
     display: block;
 }
+.header__navbar-user-item--sperate {
+    border-top: 1px solid rgba(0,0,0,0.1); 
+}
 
 .header__navbar-item,.header__navbar-item-link{
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
@@ -130,6 +133,9 @@
     color: var(--white-color);
     text-decoration: none;
 
+}
+.header__navbar-icon-link:nth-child(2){
+    margin-left: 3px;
 }
 .header__navbar-icon{
     font-size: 1.8rem;
@@ -201,7 +207,7 @@ color: white;
     width: 404px;
     background-color: var(--white-color);
     border: 1px solid #d3d3d3;
-    transform-origin: calc(100% - 20px) top ;
+    transform-origin: calc(100% - 32px) top ;
     animation: headerNotifyGrowth ease-in 0.25s;
     will-change: opacity,transform;
     display: none;
@@ -331,6 +337,10 @@ margin: 0 4px;
 }
 .header__logo{
     width:200px ;
+}
+.header__logo-link{
+    color: transparent;
+    text-decoration: none;
 }
 .header__logo-img{
     
