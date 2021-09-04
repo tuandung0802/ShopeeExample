@@ -940,7 +940,7 @@
   background-color: #ededed;
   display: flex;
   align-items: center;
-  margin-left: 24px;
+  margin-left: 10px;
   padding: 12px 12px;
   border-radius: 2px;
 }
@@ -954,6 +954,7 @@
 .home-filter__page {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .home-filter_btn {
@@ -962,13 +963,74 @@
   background-color: white;
 }
 
-.select-input__item {
-  list-style: none;
+.home-filter__page-num {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-right: 22px;
 }
 
-.select-input__link {
+.home-filter__page-current {
+  color: var(--primary-color);
+}
+
+.home-filter__page-control {
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  width: 72px;
+  height: 36px;
+}
+
+.home-filter__page-btn {
+  flex: 1;
+  display: flex;
+  background: var(--white-color);
   text-decoration: none;
-  color: var(--black-color);
+}
+
+.home-filter__page-btn:first-child {
+  border-right: 1px solid #eee;
+}
+
+.page-icon {
+  margin: auto;
+  font-size: 1.4rem;
+  color: #555555;
+}
+
+.home-filter__page-btn--disable {
+  background-color: #f9f9f9;
+  cursor: default;
+}
+
+.home-filter__page-btn--disable .home-filter__page-icon {
+  color: #ccc;
+}
+
+.home-product-item {
+  margin-top: 10px;
+  background-color: var(--white-color);
+}
+
+.home-product-item__img {
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.home-product-item__name {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.8rem;
+  height: 3.6rem;
+  overflow: hidden;
+  margin: 10px 10px;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 /*# sourceMappingURL=app.css.map */
