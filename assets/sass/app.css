@@ -935,4 +935,40 @@
   right: -4px;
 }
 
+.home-filter {
+  position: relative;
+  background-color: #ededed;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  padding: 12px 12px;
+  border-radius: 2px;
+}
+
+.home-filter__label {
+  font-size: 1.4rem;
+  color: #555;
+  margin-right: 16px;
+}
+
+.home-filter__page {
+  display: flex;
+  align-items: center;
+}
+
+.home-filter_btn {
+  margin-right: 12px;
+  min-width: 90px;
+  background-color: white;
+}
+
+.select-input__item {
+  list-style: none;
+}
+
+.select-input__link {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
 /*# sourceMappingURL=app.css.map */

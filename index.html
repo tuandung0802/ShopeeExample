@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assets/sass/app.css">
     <link rel="stylesheet" href="./assets/sass/main.css">
+    <link rel="stylesheet" href="./assets/sass/app.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Demo Shopee</title>
@@ -314,14 +314,20 @@
                     <div class="grid__column-10">
                         <div class="home-filter">
                             <span class="home-filter__label">Sắp xếp theo</span>
-                            <button class="btn">Phổ biến</button>
-                            <button class="btn btn--primary">Mới nhất</button>
-                            <button class="btn">Bán chạy</button>
+                            <button class=" btn home-filter_btn">Phổ biến</button>
+                            <button class=" btn  home-filter_btn btn--primary">Mới nhất</button>
+                            <button class=" btn home-filter_btn ">Bán chạy</button>
 
                             <div class="select-input">
                                 <span class="select-input__label">Giá</span>
-                                <i class="fas fa-angle-down"></i>
-                                
+                                <i class="select-input__icon fas fa-angle-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá : Thấp đến cao</a>
+                                        <a href="" class="select-input__link">Giá : Cao đến thấp</a>
+
+                                    </li>
+                                </ul>
                             </div>
                             <div class="home-filter__page">
                                 <span class="home-filter__page-num">
