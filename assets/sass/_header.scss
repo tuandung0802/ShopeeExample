@@ -493,6 +493,7 @@ margin: 0 4px;
     padding-left: 0;
     list-style: none;
     margin:6px 0 0;
+    z-index: 1;
 }
 .header__search-history-item{
     height: 38px;
@@ -675,8 +676,14 @@ width: 60px;
     color: var(--text-color);
     margin: 0;
     line-height: 2rem;
-    height: 4rem;
+    max-height: 4rem;
     overflow: hidden;
+    flex: 1;
+    padding-right:16px ;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: left;
 
 }
 .header__cart-item-price{
