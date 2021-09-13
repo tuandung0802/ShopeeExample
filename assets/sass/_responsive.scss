@@ -3,6 +3,7 @@
     .hide-on-mobile-tablet{
         display: none;
     }
+    
     :root{
 //     --navbar-height: 0px;
 //   --header-height: 120px; 
@@ -35,6 +36,9 @@
         --header-height: 62px;
         top: var(--header-height);
         display: flex;
+    }
+    .show-on{
+        display: block;
     }
     
 }
@@ -124,6 +128,23 @@
     }
     .app__content{
         margin: 0 4px;
+    }
+    .footer__content{
+        padding:0 16px;
+    }
+    .footer__heading{
+        text-align: center;
+    }
+    .footer__download,
+    .footer-item__link{
+        justify-content: center;
+    }
+    .footer__download-apps{
+        flex:unset;
+    }
+    .footer_download-app-link{
+        display: block;
+        padding: 6px 8px;
     }
 
 
