@@ -1,4 +1,6 @@
-
+.app{
+    overflow: hidden;
+}
 
 *{
     box-sizing: inherit;
@@ -12,15 +14,7 @@ html{
         margin: 0;
 }
 
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
 
-.grid__ful-width{
-    width: 100%;   
-}
 
 .grid__row{
     display: flex;
@@ -177,6 +171,7 @@ html{
 
 .home-product__pagination{
     margin: 48px 0 32px 0;
+    padding-left: 0;
 }
 /* Pagination */
 .pagination{
@@ -194,7 +189,7 @@ html{
     text-decoration: none;
     font-size: 2rem;
     color: #939393;
-    min-width: 40px;
+    min-width: 44px;
     height: 30px;
     text-align: center;
     line-height: 30px;
